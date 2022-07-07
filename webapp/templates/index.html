@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block nav %}
+{% endblock %}
+{% block content %}
+    <div class="alert alert-info" role="alert">
+        <h1 style="color: dimgrey">To-Do List</h1>
+        {% for task in tasks %}
+            <div class="card" style="color: darkslategrey">
+                <div class="card-header" style="background: aquamarine">
+                    {{ task.status }}
+                    {{ task.type }}
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ task.summary }}</h5>
+                    <p class="card-text">Дата
+                        создания: {{ task.created_at|date:"Y-m-d"|default:"Не указано" }}</p>
+                    <a href="#" class="btn btn-info"
+                       style="background: lightgrey; border-color: lightgrey">Подробнее</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
