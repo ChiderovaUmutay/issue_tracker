@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 {% block title %}Детальный просмотр{% endblock %}
 {% block nav %}
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="{% url "create_task" %}">Создание задачи</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="{% url "update_task" task.pk %}">Редактировать</a>
+    </li>
 {% endblock %}
 {% block content %}
     <div class="card border-success mb-3" style="max-width: 18rem; background: powderblue; border-color: powderblue">
