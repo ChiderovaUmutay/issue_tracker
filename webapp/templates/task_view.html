@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Детальный просмотр{% endblock %}
+{% block nav %}
+{% endblock %}
+{% block content %}
+    <div class="card border-success mb-3" style="max-width: 18rem; background: powderblue; border-color: powderblue">
+        <div class="card-header bg-transparent border-success">
+            <p>Статус: {{ task.status }}</p>
+            <p>Тип: {{ task.type }}</p>
+        </div>
+        <div class="card-body text-success" style="background: white">
+            <h5 class="card-title">{{ task.summary }}</h5>
+            <p class="card-text">{{ task.description }}</p>
+        </div>
+        <div class="card-footer bg-transparent border-success">Дата
+            создания: {{ task.created_at|date:"Y-m-d"|default:"Не указано" }}</div>
+    </div>
+{% endblock %}
