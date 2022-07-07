@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 {% block nav %}
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="{% url "create_task" %}">Создание статьи</a>
+    </li>
 {% endblock %}
 {% block content %}
     <div class="alert alert-info" role="alert">
