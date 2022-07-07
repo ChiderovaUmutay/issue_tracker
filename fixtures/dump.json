@@ -1,0 +1,140 @@
+[
+{
+    "model": "webapp.task",
+    "pk": 1,
+    "fields": {
+        "created_at": "2022-07-07T07:42:35.773Z",
+        "updated_at": "2022-07-07T07:42:35.773Z",
+        "summary": "Сходить за покупками",
+        "description": "Молоко, творог, мука, яйца",
+        "status": 1,
+        "type": 1
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 2,
+    "fields": {
+        "created_at": "2022-07-07T07:43:38.172Z",
+        "updated_at": "2022-07-07T07:43:38.172Z",
+        "summary": "Сходить на встречу",
+        "description": "Кофейня 'Бублик'",
+        "status": 3,
+        "type": 1
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 3,
+    "fields": {
+        "created_at": "2022-07-07T07:44:53.549Z",
+        "updated_at": "2022-07-07T07:44:53.549Z",
+        "summary": "Убраться",
+        "description": "Протереть все поверхности, пропылесосить, помыть полы",
+        "status": 2,
+        "type": 3
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 4,
+    "fields": {
+        "created_at": "2022-07-07T07:45:12.673Z",
+        "updated_at": "2022-07-07T07:45:12.673Z",
+        "summary": "Просмотреть отчеты",
+        "description": "Выполнить до ревизии",
+        "status": 1,
+        "type": 2
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 5,
+    "fields": {
+        "created_at": "2022-07-07T07:45:36.463Z",
+        "updated_at": "2022-07-07T07:45:36.463Z",
+        "summary": "Написать чеклист",
+        "description": "Выполнить до начала Июля",
+        "status": 3,
+        "type": 3
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 6,
+    "fields": {
+        "created_at": "2022-07-07T07:45:54.021Z",
+        "updated_at": "2022-07-07T07:45:54.021Z",
+        "summary": "Сходить в бассейн",
+        "description": "ДСК",
+        "status": 1,
+        "type": 1
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 7,
+    "fields": {
+        "created_at": "2022-07-07T07:46:08.663Z",
+        "updated_at": "2022-07-07T07:46:08.663Z",
+        "summary": "Сделать д/з",
+        "description": "До дедлайна",
+        "status": 2,
+        "type": 1
+    }
+},
+{
+    "model": "webapp.status",
+    "pk": 1,
+    "fields": {
+        "created_at": null,
+        "updated_at": null,
+        "status": "новый"
+    }
+},
+{
+    "model": "webapp.status",
+    "pk": 2,
+    "fields": {
+        "created_at": null,
+        "updated_at": null,
+        "status": "в процессе"
+    }
+},
+{
+    "model": "webapp.status",
+    "pk": 3,
+    "fields": {
+        "created_at": null,
+        "updated_at": null,
+        "status": "выполнено"
+    }
+},
+{
+    "model": "webapp.type",
+    "pk": 1,
+    "fields": {
+        "created_at": null,
+        "updated_at": null,
+        "type": "задача"
+    }
+},
+{
+    "model": "webapp.type",
+    "pk": 2,
+    "fields": {
+        "created_at": null,
+        "updated_at": null,
+        "type": "ошибка"
+    }
+},
+{
+    "model": "webapp.type",
+    "pk": 3,
+    "fields": {
+        "created_at": null,
+        "updated_at": null,
+        "type": "улучшение"
+    }
+}
+]
