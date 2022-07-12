@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from webapp.models import Task
+from webapp.models import Task, Type, Status
 
 
 class TaskAdmin(admin.ModelAdmin):
@@ -14,3 +14,5 @@ class TaskAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Task, TaskAdmin)
+admin.site.register(Type)
+admin.site.register(Status)
