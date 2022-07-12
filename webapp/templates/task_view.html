@@ -40,7 +40,10 @@
     <div class="card border-success mb-3" style="max-width: 18rem; background: powderblue; border-color: powderblue">
         <div class="card-header bg-transparent border-success">
             <p>Статус: {{ task.status }}</p>
-            <p>Тип: {{ task.type }}</p>
+            <p>Тип: {% for type in task.type.all %}
+                {{ type.type }}
+                {% if not forloop.last %}, {% endif %}
+            {% endfor %}</p>
         </div>
         <div class="card-body text-success" style="background: white">
             <h5 class="card-title">{{ task.summary }}</h5>
