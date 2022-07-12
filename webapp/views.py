@@ -51,7 +51,7 @@ class UpdateTask(View):
             "summary": self.task.summary,
             "description": self.task.description,
             "status": self.task.status,
-            "type": self.task.type,
+            "type": self.task.type.all(),
         })
         return render(request, "update.html", {"form": form})
 
@@ -61,7 +61,7 @@ class UpdateTask(View):
             self.task.summary = form.cleaned_data.get("summary")
             self.task.description = form.cleaned_data.get("description")
             self.task.status = form.cleaned_data.get("status")
-            self.task.type = form.cleaned_data.get("type")
+            self.task.type.set(form.cleaned_data.pop("type"))
             self.task.save()
             return redirect("task_view", pk=self.task.pk)
         return render(request, "update.html", {"form": form})

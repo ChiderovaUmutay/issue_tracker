@@ -14,7 +14,4 @@ class TaskForm(forms.ModelForm):
             "status": {
                 "required": "Поле обязательно для заполнения"
             },
-            "type": {
-                "required": "Поле обязательно для заполнения"
-            }
         }
