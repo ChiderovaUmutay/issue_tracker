@@ -1,4 +1,5 @@
 from django import forms
+from django.forms import widgets
 
 from webapp.models import Task
 
@@ -14,4 +15,7 @@ class TaskForm(forms.ModelForm):
             "status": {
                 "required": "Поле обязательно для заполнения"
             },
+        }
+        widgets = {
+            "type": widgets.CheckboxSelectMultiple
         }
