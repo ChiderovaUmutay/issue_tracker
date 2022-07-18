@@ -1,156 +1,223 @@
 [
 {
-  "model": "webapp.task",
-  "pk": 1,
-  "fields": {
-    "created_at": "2022-07-12T07:52:26.084Z",
-    "updated_at": "2022-07-12T07:52:26.084Z",
-    "summary": "Сходить за покупками",
-    "description": "Молоко, творог, мука, яйца",
-    "status": 1,
-    "type": [
-      1
-    ]
-  }
+    "model": "webapp.task",
+    "pk": 1,
+    "fields": {
+        "created_at": "2022-07-12T07:52:26.084Z",
+        "updated_at": "2022-07-12T07:52:26.084Z",
+        "summary": "Сходить за покупками",
+        "description": "Молоко, творог, мука, яйца",
+        "status": 1,
+        "type": [
+            1
+        ]
+    }
 },
 {
-  "model": "webapp.task",
-  "pk": 2,
-  "fields": {
-    "created_at": "2022-07-12T07:53:13.506Z",
-    "updated_at": "2022-07-12T07:53:13.506Z",
-    "summary": "Сходить на встречу",
-    "description": "Кофейня 'Бублик'",
-    "status": 3,
-    "type": [
-      1
-    ]
-  }
+    "model": "webapp.task",
+    "pk": 2,
+    "fields": {
+        "created_at": "2022-07-12T07:53:13.506Z",
+        "updated_at": "2022-07-17T13:22:00.495Z",
+        "summary": "Сходить на встречу",
+        "description": "Кофейня 'Бублик'",
+        "status": 4,
+        "type": [
+            1
+        ]
+    }
 },
 {
-  "model": "webapp.task",
-  "pk": 3,
-  "fields": {
-    "created_at": "2022-07-12T07:53:40.015Z",
-    "updated_at": "2022-07-12T07:53:40.015Z",
-    "summary": "Убраться",
-    "description": "Протереть все поверхности, пропылесосить, помыть полы",
-    "status": 2,
-    "type": [
-      1,
-      3
-    ]
-  }
+    "model": "webapp.task",
+    "pk": 3,
+    "fields": {
+        "created_at": "2022-07-12T07:53:40.015Z",
+        "updated_at": "2022-07-12T07:53:40.015Z",
+        "summary": "Убраться",
+        "description": "Протереть все поверхности, пропылесосить, помыть полы",
+        "status": 2,
+        "type": [
+            1,
+            3
+        ]
+    }
 },
 {
-  "model": "webapp.task",
-  "pk": 4,
-  "fields": {
-    "created_at": "2022-07-12T07:54:30.265Z",
-    "updated_at": "2022-07-12T07:54:30.265Z",
-    "summary": "Просмотреть отчеты",
-    "description": "Выполнить до ревизии",
-    "status": 1,
-    "type": [
-      1
-    ]
-  }
+    "model": "webapp.task",
+    "pk": 4,
+    "fields": {
+        "created_at": "2022-07-12T07:54:30.265Z",
+        "updated_at": "2022-07-12T07:54:30.265Z",
+        "summary": "Просмотреть отчеты",
+        "description": "Выполнить до ревизии",
+        "status": 1,
+        "type": [
+            1
+        ]
+    }
 },
 {
-  "model": "webapp.task",
-  "pk": 5,
-  "fields": {
-    "created_at": "2022-07-12T07:54:51.675Z",
-    "updated_at": "2022-07-12T07:54:51.675Z",
-    "summary": "Написать чеклист",
-    "description": "Выполнить до начала Июля",
-    "status": 3,
-    "type": [
-      3
-    ]
-  }
+    "model": "webapp.task",
+    "pk": 5,
+    "fields": {
+        "created_at": "2022-07-12T07:54:51.675Z",
+        "updated_at": "2022-07-18T05:27:46.868Z",
+        "summary": "Написать чеклист",
+        "description": "Написать чеклист  до начала Августа",
+        "status": 4,
+        "type": [
+            3
+        ]
+    }
 },
 {
-  "model": "webapp.task",
-  "pk": 6,
-  "fields": {
-    "created_at": "2022-07-12T07:55:30.933Z",
-    "updated_at": "2022-07-12T07:55:30.933Z",
-    "summary": "Сходить в бассейн",
-    "description": "ДСК",
-    "status": 3,
-    "type": [
-      1
-    ]
-  }
+    "model": "webapp.task",
+    "pk": 6,
+    "fields": {
+        "created_at": "2022-07-12T07:55:30.933Z",
+        "updated_at": "2022-07-17T13:22:20.513Z",
+        "summary": "Сходить в бассейн",
+        "description": "ДСК",
+        "status": 4,
+        "type": [
+            1
+        ]
+    }
 },
 {
-  "model": "webapp.task",
-  "pk": 7,
-  "fields": {
-    "created_at": "2022-07-12T07:55:54.749Z",
-    "updated_at": "2022-07-12T07:55:54.749Z",
-    "summary": "Сделать д/з",
-    "description": "До дедлайна",
-    "status": 2,
-    "type": [
-      1,
-      3
-    ]
-  }
+    "model": "webapp.task",
+    "pk": 7,
+    "fields": {
+        "created_at": "2022-07-12T07:55:54.749Z",
+        "updated_at": "2022-07-18T05:27:18.856Z",
+        "summary": "Сделать д/з",
+        "description": "Сделать д/з до дедлайна",
+        "status": 2,
+        "type": [
+            1,
+            3
+        ]
+    }
 },
 {
-  "model": "webapp.status",
-  "pk": 1,
-  "fields": {
-    "created_at": "2022-07-12T07:50:36.894Z",
-    "updated_at": "2022-07-12T07:50:36.894Z",
-    "status": "новый"
-  }
+    "model": "webapp.task",
+    "pk": 8,
+    "fields": {
+        "created_at": "2022-07-17T13:46:08.746Z",
+        "updated_at": "2022-07-17T14:17:23.826Z",
+        "summary": "Найти информацию про компанию 'Bug'",
+        "description": "«БАГ Инжиниринг» – команда профессионалов, специализирующихся на предоставлении услуг в сфере строительства и инженерии.",
+        "status": 2,
+        "type": [
+            2
+        ]
+    }
 },
 {
-  "model": "webapp.status",
-  "pk": 2,
-  "fields": {
-    "created_at": "2022-07-12T07:51:01.818Z",
-    "updated_at": "2022-07-12T07:51:01.818Z",
-    "status": "в процессе"
-  }
+    "model": "webapp.task",
+    "pk": 9,
+    "fields": {
+        "created_at": "2022-07-18T05:29:11.335Z",
+        "updated_at": "2022-07-18T05:29:11.335Z",
+        "summary": "Полить цветы",
+        "description": "Полить цветы",
+        "status": 2,
+        "type": [
+            1,
+            3
+        ]
+    }
 },
 {
-  "model": "webapp.status",
-  "pk": 3,
-  "fields": {
-    "created_at": "2022-07-12T07:51:09.742Z",
-    "updated_at": "2022-07-12T07:51:09.742Z",
-    "status": "выполнено"
-  }
+    "model": "webapp.task",
+    "pk": 10,
+    "fields": {
+        "created_at": "2022-07-18T05:30:13.720Z",
+        "updated_at": "2022-07-18T05:30:13.720Z",
+        "summary": "Купить глину для лепки",
+        "description": "Купить глину для лепки",
+        "status": 1,
+        "type": [
+            1,
+            2
+        ]
+    }
 },
 {
-  "model": "webapp.type",
-  "pk": 1,
-  "fields": {
-    "created_at": "2022-07-12T07:51:32.071Z",
-    "updated_at": "2022-07-12T07:51:32.071Z",
-    "type": "задача"
-  }
+    "model": "webapp.task",
+    "pk": 11,
+    "fields": {
+        "created_at": "2022-07-18T05:31:22.368Z",
+        "updated_at": "2022-07-18T05:31:22.368Z",
+        "summary": "Просмотреть срок годности на всех продуктах",
+        "description": "Просмотреть срок годности на всех продуктах",
+        "status": 4,
+        "type": [
+            2
+        ]
+    }
 },
 {
-  "model": "webapp.type",
-  "pk": 2,
-  "fields": {
-    "created_at": "2022-07-12T07:51:39.855Z",
-    "updated_at": "2022-07-12T07:51:39.855Z",
-    "type": "ошибка"
-  }
+    "model": "webapp.status",
+    "pk": 1,
+    "fields": {
+        "created_at": "2022-07-12T07:50:36.894Z",
+        "updated_at": "2022-07-12T07:50:36.894Z",
+        "status": "новый"
+    }
 },
 {
-  "model": "webapp.type",
-  "pk": 3,
-  "fields": {
-    "created_at": "2022-07-12T07:51:46.791Z",
-    "updated_at": "2022-07-12T07:51:46.791Z",
-    "type": "улучшение"
-  }
+    "model": "webapp.status",
+    "pk": 2,
+    "fields": {
+        "created_at": "2022-07-12T07:51:01.818Z",
+        "updated_at": "2022-07-12T07:51:01.818Z",
+        "status": "в процессе"
+    }
+},
+{
+    "model": "webapp.status",
+    "pk": 3,
+    "fields": {
+        "created_at": "2022-07-12T07:51:09.742Z",
+        "updated_at": "2022-07-12T07:51:09.742Z",
+        "status": "выполнено"
+    }
+},
+{
+    "model": "webapp.status",
+    "pk": 4,
+    "fields": {
+        "created_at": "2022-07-17T13:18:52.534Z",
+        "updated_at": "2022-07-17T13:18:52.534Z",
+        "status": "закрытый"
+    }
+},
+{
+    "model": "webapp.type",
+    "pk": 1,
+    "fields": {
+        "created_at": "2022-07-12T07:51:32.071Z",
+        "updated_at": "2022-07-12T07:51:32.071Z",
+        "type": "задача"
+    }
+},
+{
+    "model": "webapp.type",
+    "pk": 2,
+    "fields": {
+        "created_at": "2022-07-12T07:51:39.855Z",
+        "updated_at": "2022-07-17T13:42:28.032Z",
+        "type": "bug"
+    }
+},
+{
+    "model": "webapp.type",
+    "pk": 3,
+    "fields": {
+        "created_at": "2022-07-12T07:51:46.791Z",
+        "updated_at": "2022-07-12T07:51:46.791Z",
+        "type": "улучшение"
+    }
 }
 ]
