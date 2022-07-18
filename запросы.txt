@@ -1,0 +1,30 @@
+1.
+from webapp.models import Task 
+Task.objects.filter(status__status__contains=("зак"), updated_at__date__gte=datetime.now()-timedelta(days=30))
+2.
+from webapp.models import Task 
+from django.db.models import Q  
+q1 = Q(status__status__icontains=("в проц")) 
+q2 = Q(status__status__icontains=("закр")) 
+q3 = Q(type__type__icontains=("улуч")) 
+q4 = Q(type__type__icontains=("зада")) 
+Task.objects.filter(q1 | q2, q3 | q4).distinct()
+3.
+from webapp.models import Task 
+q1 = Q(summary__icontains=("bug"))                
+q2 = Q(type__type__icontains=("bug"))
+q3 = Q(status__status__contains=("закр")) 
+Task.objects.filter((q1 | q2), ~q3)
+
+4.
+from django.db.models import F 
+Task.objects.filter(summary=F('description'))
+
+5.
+from webapp.models import Type
+from django.db.models import Count  
+t = Type.objects.annotate(count = Count('task'))
+t[0].count
+t[1].count
+t[2].count
+
