@@ -1,5 +1,6 @@
 1.
 from webapp.models import Task 
+from datetime import datetime, timedelta
 Task.objects.filter(status__status__contains=("зак"), updated_at__date__gte=datetime.now()-timedelta(days=30))
 2.
 from webapp.models import Task 
