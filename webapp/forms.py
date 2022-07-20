@@ -32,5 +32,9 @@ class TaskForm(forms.ModelForm):
     def clean_description(self):
         description = self.cleaned_data.get("description")
         if len(description) <= 1:
-            raise ValidationError("Описание не должно быть короче одного символа")
+            raise ValidationError("Описание не должно быть короче двух символов")
         return description
+
+
+class SearchForm(forms.Form):
+    search = forms.CharField(max_length=50, required=False, label="Найти")
