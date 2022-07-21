@@ -15,7 +15,6 @@ class IndexView(ListView):
     model = Task
     template_name = "index.html"
     context_object_name = "tasks"
-    ordering = ("-updated_at",)
     paginate_by = 10
 
     def get(self, request, *args, **kwargs):
@@ -31,10 +30,11 @@ class IndexView(ListView):
             return self.form.cleaned_data.get("search")
 
     def get_queryset(self):
+        tasks = Task.objects.all()
         if self.search_value:
-            return Task.objects.filter(
+            return tasks.filter(
                 Q(summary__icontains=self.search_value) | Q(description__icontains=self.search_value))
-        return Task.objects.all()
+        return tasks.order_by("-updated_at")
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(object_list=object_list, **kwargs)
